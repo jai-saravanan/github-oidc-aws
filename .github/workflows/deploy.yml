@@ -8,7 +8,7 @@ on:
 
 env:
   AWS_REGION: us-east-1
-  ACTIONS_STEP_DEBUG: true
+  # ACTIONS_STEP_DEBUG: true
 
 permissions:
   id-token: write
