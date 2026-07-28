@@ -4,12 +4,8 @@ A simple FastAPI application for managing customers with health check endpoint, 
 
 ## Features
 
-- **Health Check**: `/health` - Returns API status
 - **Add Customer**: `POST /customers` - Create a new customer
 - **List Customers**: `GET /customers` - Retrieve all customers
-- **Get Customer**: `GET /customers/{customer_id}` - Get specific customer
-- **Update Customer**: `PUT /customers/{customer_id}` - Update customer details
-- **Delete Customer**: `DELETE /customers/{customer_id}` - Remove a customer
 
 ## Local Development
 
@@ -60,26 +56,6 @@ curl -X POST http://localhost:8000/customers \
 ### List Customers
 ```bash
 curl http://localhost:8000/customers
-```
-
-### Get Customer
-```bash
-curl http://localhost:8000/customers/1
-```
-
-### Update Customer
-```bash
-curl -X PUT http://localhost:8000/customers/1 \
-  -H "Content-Type: application/json" \
-  -d '{
-    "name": "Jane Doe",
-    "email": "jane@example.com"
-  }'
-```
-
-### Delete Customer
-```bash
-curl -X DELETE http://localhost:8000/customers/1
 ```
 
 ## Deploy to AWS Lambda with GitHub Actions + OIDC
