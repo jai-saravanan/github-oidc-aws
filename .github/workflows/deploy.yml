@@ -35,7 +35,7 @@ jobs:
 
       - uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::122941220195:role/serverless-deployment
+          role-to-assume: arn:aws:iam::122941220195:role/oidc
           aws-region: us-east-1
 
       - name: Display AWS Credentials Info (Demo)
