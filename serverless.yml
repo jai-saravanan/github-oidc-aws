@@ -1,4 +1,4 @@
-service: customer-api
+service: customer-application
 
 frameworkVersion: '3'
 
